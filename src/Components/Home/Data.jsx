@@ -5,7 +5,7 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1>
-        <span className="home__title">Mikat Syed</span> <span className="home__hand"><img src={Hand} alt=""/></span>
+        <span className="home__title">Syed Gaziul Haque</span> <span className="home__hand"><img src={Hand} alt=""/></span>
       </h1>
 
       <h3 className="home__subtitle">Web Developer</h3>

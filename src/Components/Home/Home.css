@@ -26,6 +26,7 @@
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-0-25);
+  color: #006064;
 }
 
 .home__hand > img {
@@ -43,6 +44,7 @@
   padding-left: 5.4rem;
   font-weight: var(--font-normal);
   margin-bottom: var(--mb-1);
+  color: #009688;
 }
 
 .home__subtitle::before {
@@ -105,7 +107,7 @@
     }
 } */
 .home__scroll-name {
-  color: var(--title-color);
+  color: #009688;
   font-size: var(--font-medium);
   margin-right: var(--mb-0-25);
   margin-left: 2px;

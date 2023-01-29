@@ -68,16 +68,18 @@
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: var(--text-color);
+  background-color: #00695c;
   border-radius: 50%;
+ 
 }
 
 .qualification__line {
   display: block;
   width: 2px;
   height: 100%;
-  background-color: var(--text-color);
+  background-color: #00695c;
   transform: translate(6px, -7px);
+  z-index: -1;
 }
 
 @media screen and (max-width: 992px) {

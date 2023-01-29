@@ -17,9 +17,7 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            MERN Stack web developer, I create web pages with UI / UX user
-            interface, i have years of experiance and many clients with the
-            project carried out.
+          I’m a MERN Stack Web Application developer who is passionate about making error-free websites with 100% client satisfaction. I have a passion for learning and sharing my knowledge with others as publicly as possible. I love to solve real-world problems. I am strategic, goal-oriented, and always work with an end goal in mind.I pride myself on doing quality work and maintain excellent communication. I enjoy working with include ReactJS, JavaScript,Express.js as well as TypeScript.
           </p>
 
           <a download="" href={CV} className="button button--flex about__btn">Download CV</a>
