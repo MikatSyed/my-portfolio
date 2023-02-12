@@ -35,20 +35,17 @@ export const projectsData = [
     image: Work3,
     title: "React Quiz",
     category: "web",
-    name: "Bike Rental Services",
+    link:"https://quiz-new.netlify.app",
+    github:"https://github.com/MikatSyed/react-quiz",
+    name: "React Quiz Application",
     header: "A Multi-Page React Quiz Application.",
     desc1: " Authorization & Authorization Implementation.",
     desc2: " User can answer quiz question",
     desc3: "Admin and User Inter Connection System.",
-    tech: ['React.js','Axios','React Hook','React Router','Tailwind CSS','Redux Saga','Express','JWTToken','Mongoose','Stripe Payment','Nodemon','Dotenv','Rendered']
+    tech: ['React.js','Axios','React Hook','React Router','Module CSS','ContextAPI','Firebase','Netlify']
   },
 
-  {
-    id: 4,
-    image: Work4,
-    title: "Chatting Application",
-    category: "web",
-  },
+ 
 
   // {
   //   id: 5,
