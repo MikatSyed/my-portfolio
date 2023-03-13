@@ -102,12 +102,12 @@ const Qualification = () => {
           <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Product Designer </h3>
+                <h3 className="qualification__title">Junior Software Engineer </h3>
                 <span className="qualification__subtitle">
-                  Bangladesh- Institute
+                  Syscon Solution Ltd.
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i>2-18 - 2022
+                  <i className="uil uil-calender-alt"></i>2023(February - Running)
                 </div>
               </div>
 
@@ -117,41 +117,7 @@ const Qualification = () => {
               </div>
             </div>
 
-            <div className="qualification__data">
-              <div></div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification__title">UX Designer</h3>
-                <span className="qualification__subtitle">
-                 Figma - Bangladesh
-                </span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i>2-18 - 2022
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Web Development</h3>
-                <span className="qualification__subtitle">
-                  Bangladesh- Institute
-                </span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i>2-18 - 2022
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
+       
 
   
           </div>

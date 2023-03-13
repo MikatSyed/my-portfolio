@@ -52,7 +52,7 @@ const Portfolio = () => {
 
      
         <div className="work__container ">
-        {projects?.map(({ id, image, title, category,name,header,desc,tech }) => {
+        {projects?.map(({ id, image, title, category,name,header,desc,tech,link,github }) => {
           return (
             
             <div className="work__item-main">
@@ -66,7 +66,7 @@ const Portfolio = () => {
               <span className="work__category">{category}</span>
               <h3 className="work__title">{title}</h3>
               <a
-                href="https://github.com"
+                href={link}
                 className="work__button-live"
                 rel="noreferrer"
                 target="_blank"
@@ -75,7 +75,7 @@ const Portfolio = () => {
               </a>
 
               <a
-                href="https://github.com"
+                href={github}
                 className="work__button-github"
                 rel="noreferrer"
                 target="_blank" 
