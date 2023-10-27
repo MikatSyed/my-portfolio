@@ -4,14 +4,14 @@ import { projectsData } from "./Data.js";
 import { projectNav } from "./Data.js";
 import { useState } from "react";
 import { useEffect } from "react";
-import {projectDesc} from './Data.js'
+// import {projectDesc} from './Data.js'
 
 const Portfolio = () => {
   const [item, setItem] = useState({ name: "all" });
   const [projects, setProjects] = useState([]);
-  console.log({projects});
+  // console.log({projects});
   const [active, setActive] = useState(0);
-  console.log({ projectNav });
+  // console.log({ projectNav });
 
   useEffect(() => {
     if (item.name === "all") {
@@ -55,7 +55,7 @@ const Portfolio = () => {
         {projects?.map(({ id, image, title, category,name,header,desc,tech,link,github }) => {
           return (
             
-            <div className="work__item-main">
+            <div className="work__item-main" key={id}>
 
                <div className="work__item-1">
                <div className="work__card" key={id}>
@@ -87,11 +87,9 @@ const Portfolio = () => {
             </div>
 
 
-               <div>
                <div className="work__item-2">
                  <h1 className="work__name">{name}</h1>
-                 <h4 className="work__header">{header}</h4>
-               
+        
          
               {desc?.map((d)=> 
               <li className="work__desc" key={id}>{d.d}</li>
@@ -99,7 +97,7 @@ const Portfolio = () => {
                  {tech?.map((t)=> (
                   <button  key={id} className="work__tech-btn">{t}</button>
                   ))}     
-           </div> 
+           
                </div>
 
            </div>
@@ -114,7 +112,8 @@ const Portfolio = () => {
 
 
               </div>
-        </div>  
+        </div>
+        
     </section>
   );
 };

@@ -9,6 +9,7 @@ import Qualification from './Components/Qualification/Qualification';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Portfolio from './Components/Portfolio/Portfolio';
+import BlogCard from './Components/Blog/BlogCard';
 
 
 
@@ -24,6 +25,7 @@ function App() {
    <Services/>
    <Qualification/>
    <Portfolio/>
+   <BlogCard/>
    <Contact/>
    <Footer/>
    </main>

@@ -23,10 +23,7 @@
   background-color: #26a69a;
 }
 
-.work__container {
- 
- 
-}
+
 .work__item-main{
   display: flex;
  
@@ -181,16 +178,7 @@
     max-height: 100vh;
    
   }
-  .work__item-1{
-   
-   
   
-  }
-  .work__item-2{
-  
-   
-  
-  }
 
   .work__button-live{
     height: 35px;
@@ -209,24 +197,40 @@
 }
 
 /* For medium devices */
+/* For medium devices and small devices */
 @media screen and (max-width: 768px) {
   .work__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--mb-1);
     margin-right: var(--mb-2-5);
     margin-left: var(--mb-2-5);
   }
 
+  .work__item-1 {
+    width: 100%; /* Set .work__item-1 to take full width */
+    margin: 0 auto; /* Center .work__item-1 horizontally */
+    text-align: center; /* Justify content to the center horizontally */
+    height: auto; /* Allow the height to adjust as needed */
+  }
 
-  .work__title{
+  .work__item-2 {
+    display: none; /* Hide .work__item-2 on medium devices */
+  }
+  .work__title {
     font-size: var(--h3-font-size);
   }
-  .work__img {
-    width: 100%;
+
+  /* Add these rules to adjust the image size for medium devices and small devices */
+  .work__item-1 .work__img,
+  .work__item-2 .work__img {
+    width: 100%; /* Set the image width to 100% */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Allow the height to adjust as needed */
   }
-  
-  
 }
+
+/* For small devices */
+
 
 @media screen and (max-width: 576px) {
   .work__container {
@@ -250,6 +254,41 @@
     column-gap: 0.8rem;
   }
 }
+/* For medium devices */
+/* For small devices */
+/* For medium devices */
+/* For medium devices and small devices */
+@media screen and (max-width: 768px) {
+  .work__container {
+    grid-template-columns: 1fr;
+    gap: var(--mb-1);
+    margin-right: var(--mb-2-5);
+    margin-left: var(--mb-2-5);
+  }
+
+  .work__item-1 {
+    width: 100%; /* Set .work__item-1 to take full width */
+    max-width: 100%; /* Limit the maximum width to 100% */
+    margin: 0 auto; /* Center .work__item-1 horizontally */
+    text-align: center; /* Justify content to the center horizontally */
+    height: auto; /* Allow the height to adjust as needed */
+  }
+
+  .work__item-2 {
+    display: none; /* Hide .work__item-2 on medium devices */
+  }
+  .work__title {
+    font-size: var(--h3-font-size);
+  }
+
+  /* Add these rules to adjust the image size for medium devices and small devices */
+  .work__item-1 .work__img,
+  .work__item-2 .work__img {
+    width: 100%; /* Set the image width to 100% */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Allow the height to adjust as needed */
+  }
+}
 
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -262,5 +301,46 @@
   }
   .work__item {
     font-size: var(--small-font-size);
+  }
+
+  /* Add these rules to adjust the image size for small devices */
+  .work__item-1 .work__img {
+    width: 100%; /* Set the image width to 100% */
+    max-width: 100%; /* Limit the maximum width to 100% */
+    height: auto; /* Allow the height to adjust as needed */
+  }
+  .work__item-2 .work__img {
+    width: 100%; /* Set the image width to 100% */
+    max-width: 100%; /* Limit the maximum width to 100% */
+    height: auto; /* Allow the height to adjust as needed */
+  }
+}
+
+
+/* For small devices */
+/* Add this part for small devices */
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .work__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .work__filters {
+    column-gap: 0.25rem;
+  }
+  .work__item {
+    font-size: var(--small-font-size);
+  }
+
+  /* Add these rules to adjust the image size for small devices */
+  .work__item-1 .work__img {
+    width: 100%; /* Set the image width to 100% */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .work__item-2 .work__img {
+    width: 100%; /* Set the image width to 100% */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Maintain aspect ratio */
   }
 }
